@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle_Snowy Cream</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="menu-principal">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="information.html">More Information</a></li>
+                <li><a href="benefitsTips.html">Benefits and Tips</a></li>
+                <li><a href="#">Raffle</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="Snowy Cream Logo">
+        </div>
+    </header>
+    <main class="principal-maps">
+        <div class="title-subtitle">
+            <h1><span class="snowy">Snowy</span> <span class="cream">Cream</span></h1>
+            <h2><span class="fa">family</span> <span class="ce">icecream</span></h2>
+        </div>
+        <p>You can collaborate to hold and exhibition event and participate in a raffle to win an easel...</p>
+        <div class="maps-form">
+            <div class="maps">
+                <p>the Angels map...</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442359976!2d-118.74140216859325!3d34.02060844191938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1716516562544!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="section-form">
+                <form class="form-raffle">
+                    <h2>Complete and win...</h2>
+                    <div class="comp-form">
+                        <label for="nombre">First Name:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="comp-form">
+                        <label for="apellido">Last Name:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="comp-form">
+                        <label for="correo">Email:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="comp-form">
+                        <label for="meetOption">Choose Meet or Zoom:</label>
+                        <select id="meetOption" name="meetOption">
+                            <option value="zoom">Meet</option>
+                            <option value="zoom">Zoom</option>
+                        </select>  
+                    </div>
+                    <div class="comp-form">
+                        <label for="date">Choose Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="comp-form"">
+                        <label>Payment Options:</label>
+                        <div class="radio">
+                            <input type="radio" id="creditCard" name="payment" value="creditCard">
+                            <label for="creditCard">Cash</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="debitCard" name="payment" value="debitCard">
+                            <label for="debitCard">Credit Card</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <label for="paypal">Debit Card</label>
+                        </div>
+                    </div>
+                    <div class="comp-form">
+                        <label for="comentario">Message (optional):</label>
+                        <textarea id="comentario" name="comentario"></textarea>
+                    </div>
+                    <div class="boton">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Created by: Alejandro Martínez</p>
+    </footer>
+</body>
+</html>

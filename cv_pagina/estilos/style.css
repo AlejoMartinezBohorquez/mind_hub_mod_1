@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid black;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.cabezera {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cabezera .datos_personal {
+    padding: 2%;
+    width: 50%;
+}
+
+.datos_personal p {
+    font-size: 18px;
+}
+
+.datos_personal p span {
+    font-weight: bold;
+}
+
+.cabezera .foto_perfil {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+
+.foto_perfil img {
+    width: 20%;
+    height: auto;
+}
+
+.container .section_principal {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    padding: 2.5%;
+}
+
+.section_principal h2 {
+    background-color: cornflowerblue;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.perfil p {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.estudios_academicos div {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.actividades_laborales div {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.habilidades_conocimiento div {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+}

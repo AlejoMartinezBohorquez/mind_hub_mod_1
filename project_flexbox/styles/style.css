@@ -1,0 +1,44 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fondo-flex.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /*Para darle el alto completo al body*/
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+/*RESOLUCION EN QUE SE DESARROLLO EL EJERCICIO 2150px x 968px*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    height: 68%;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.chiquitos, .rojo {
+    align-self: center;
+}
+
+.negro {
+    align-self: flex-end;
+}

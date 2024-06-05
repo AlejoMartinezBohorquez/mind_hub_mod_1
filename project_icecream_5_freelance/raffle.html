@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle_Snowy Cream</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icon.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabezera">
+        <nav class="navegacion">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="information.html">More Information</a></li>
+                <li><a href="benefitsTips.html">Benefits and Tips</a></li>
+                <li><a href="#">Raffle</a></li>
+            </ul>
+        </nav>
+        <div class="logotipo">
+            <img src="./img/logo.png" alt="Logo">
+        </div>
+    </header>
+    <main class="contenedor-mapas">
+        <div class="title-subtitle">
+            <div class="contenedor-titulo-sub">
+                <h1>Snowy Cream</h1>
+                <h2>icecream with love...</h2>
+            </div>
+        </div>
+        <p>You can collaborate to hold and exhibition event and participate in a raffle to win an easel...</p>
+        <div class="mapas-formulario">
+            <div class="mapas">
+                <p>the Angels map...</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423284.0442359976!2d-118.74140216859325!3d34.02060844191938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20%C3%81ngeles%2C%20California%2C%20EE.%20UU.!5e0!3m2!1ses!2sco!4v1716516562544!5m2!1ses!2sco" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <section class="seccion-formulario">
+                <form class="formulario-principal">
+                    <h2>Complete this form</h2>
+                    <div class="campo-formulario">
+                        <label for="nombre">First Name:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="apellido">Last Name:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="correo">Email:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="meetOption">Choose Meet or Zoom:</label>
+                        <select id="meetOption" name="meetOption">
+                            <option value="zoom">Meet</option>
+                            <option value="zoom">Zoom</option>
+                        </select>  
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="date">Choose Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="campo-formulario">
+                        <label>Payment Options:</label>
+                        <div class="radio">
+                            <input type="radio" id="creditCard" name="payment" value="creditCard">
+                            <label for="creditCard">Cash</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="debitCard" name="payment" value="debitCard">
+                            <label for="debitCard">Credit Card</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="paypal" name="payment" value="paypal">
+                            <label for="paypal">Debit Card</label>
+                        </div>
+                    </div>
+                    <div class="campo-formulario">
+                        <label for="comentario">Message (optional):</label>
+                        <textarea id="comentario" name="comentario"></textarea>
+                    </div>
+                    <div class="boton-formulario">
+                        <input type="submit" value="ENVIAR">
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Created by: Jesus David Pérez Holguin</p>
+    </footer>
+</body>
+</html>

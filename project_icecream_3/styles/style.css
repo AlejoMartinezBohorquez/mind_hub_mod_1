@@ -1,0 +1,672 @@
+/*Normalizacion del style.css*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Importancion de nuestra fuente Hishest para nuestro logo*/
+@font-face {
+    font-family: 'Highest';
+    src: url(../assets/fonts/Highest.ttf);
+}
+
+/*Variables de colores */
+:root {
+    --color-primario: #EFBE7D;
+    --color-terciario: #ffffff;
+    --color-border: #FA8072;
+    --color-hover: #ff6347;
+    --snowy-color: #ff0fcf;
+    --cream-color: #ffadf1;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*COMIENZO de estilos para el HEADER-(Home, About Us, Contact)*/
+.menu-principal {
+    width: 100%;
+    padding: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-primario);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-terciario);
+    transition: all 0.3s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: var(--color-hover); 
+    transform: scale(1.1); 
+}
+
+.logo {
+    width: 10%;
+    vertical-align: middle;
+    border-radius: 50%;
+    background-color: var(--color-terciario);
+    border: 2px solid var(--color-border);
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+/*FIN de estilos para el HEADER-(Home, About Us, Contact)*/
+
+/*COMIENZO de estilos para el MAIN-HOME*/
+.title-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-subtitle h1 {
+    margin-top: 1.56rem;
+    font-family: 'Highest';
+    font-size: 3.1rem;
+    padding: 0.6rem;
+}
+
+h1 .snowy {
+    color: var(--snowy-color);
+}
+
+h1 .cream {
+    color: var(--cream-color);
+}
+
+.title-subtitle h2 {
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+h2 .fa {
+    color: var(--snowy-color);
+}
+
+h2 .ce {
+    color: var(--cream-color);
+}
+
+.main-banner {
+    width: 100%;
+}
+
+.main-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.principal-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal-product h2 {
+    margin-top: 2.5rem;
+}
+
+h2 .home {
+    color: var(--snowy-color);
+}
+
+h2 .ice {
+    color: var(--cream-color);
+}
+
+.product {
+    display: flex;
+    margin-top: 2.5rem;
+}
+
+.day-product {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.day-product p {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.product-img {
+    width: 40%;
+}
+
+.product-img img {
+    width: 100%;
+    height: auto;
+}
+/*FIN de estilos para el MAIN-HOME*/
+
+/*COMIENZO de estilos para el MAIN-ABOUT_US*/
+.about-section {
+    margin-bottom: 12.5rem;
+}
+
+section .product-about{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+section .product-about .about-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.9rem;
+}
+
+.about-img h2 {
+    padding: .9rem;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+}
+
+h2 .color-one {
+    color: var(--snowy-color);
+}
+
+h2 .color-two {
+    color: var(--cream-color);
+}
+
+
+section .product-about .description-about {
+    display: flex;
+    align-items: center;
+    width: 65%;
+}
+
+.description-about p {
+    text-align: center;
+    font-weight: 600;
+}
+/*FIN de estilos para el MAIN-ABOUT_US*/
+
+/*COMIENZO de estilos para el MAIN-CONTACT*/
+.ubication {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.ubication-img {
+    width: 70%;
+}
+
+.ubication-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.ubication-description p {
+    text-align: center;
+    padding: 0.9rem;
+    font-weight: 600;
+}
+
+.ubication-menu {
+    margin-top: 1rem;
+}
+
+.ubication-menu h2 {
+    margin-top: 0.6rem;
+}
+
+.ubication-menu h2, .ubication-menu p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1.25rem;
+    padding: 0.6rem 0.9rem;
+    background-color: var(--snowy-color);
+    border-radius: 5%;
+}
+
+.dropdown h4 {
+    display: none;
+}
+
+.dropdown span {
+    color: var(--color-terciario);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding: .75rem 1rem;
+    z-index: 1;
+    color: var(--color-terciario);
+    background-color: var(--cream-color);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+/*FIN de estilos para el MAIN-CONTACT*/
+
+/*COMIENZO de estilos para el MAIN-INFORMATION*/
+.section-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    border: 1px solid var(--cream-color);
+}
+
+caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table th, table td {
+    padding: 2.5rem;
+    text-align: center;
+    border: 1px solid var(--cream-color);
+}
+
+table thead tr {
+    background-color: var(--snowy-color);
+    color: var(--color-terciario);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: var(--cream-color);
+    color: var(--color-terciario);
+}
+
+caption .color-one {
+    color: var(--snowy-color);
+}
+
+caption .color-two {
+    color: var(--cream-color);
+}
+/*FIN de estilos para el MAIN-INFORMATION*/
+
+/*COMIENZO de estilos para el MAIN-TIPS*/
+.section-tips {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 .color-one {
+    color: var(--snowy-color);
+}
+
+h2 .color-two {
+    color: var(--cream-color);
+}
+
+.order-list {
+    width: 80%;
+    margin-top: 2.5rem;
+}
+
+.order_tips {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.order_tips figure {
+    width: 30%;
+}
+
+.order_tips figure h3 {
+    text-align: center;
+    padding: .6rem;
+    color: var(--snowy-color);
+}
+
+.order_tips figure img {
+    width: 100%;
+    height: auto;
+    border-radius: .3rem;
+}
+
+.order_1-tips {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: disc;
+    flex: 0 0 20rem;
+}
+
+.no-dot {
+    list-style-type: none;
+}
+
+.clasificacion {
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    width: 250px;
+    margin-top: 1.5rem;
+}
+  
+.clasificacion input[type=radio] {
+    display: none;
+}
+  
+.clasificacion label {
+    color: lightgray;
+    font-size: 1.5rem;
+    padding: .3rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+  
+.clasificacion input[type=radio]:checked ~ label {
+    color: gold;
+}
+  
+.clasificacion:hover label:not(:hover) {
+    color: lightgray;
+}
+  
+.clasificacion label:hover,
+.clasificacion label:hover ~ label {
+    color: gold;
+}
+/*FIN de estilos para el MAIN-TIPS*/
+
+/*COMIENZO de estilos para el FOOTER(Home, About Us, Contact)*/
+footer {
+    display: flex;
+    justify-content: center;
+    height: 6.25rem;
+    font-weight: bold;
+    background-color: var(--color-primario);
+    margin-top: 2.5rem;
+}
+
+footer p {
+    padding-top: 2.5rem;
+    color: var(--color-terciario);
+}
+/*FIN de estilos para el FOOTER(Home, About Us, Contact)*/
+
+@media screen and (max-width:1825px) {
+    .section-tips {
+        height: 100vh;
+    }
+}
+
+/*COMIENZO de responsividad para el MAIN-HOME-ABOUT_US-TIPS*/
+@media screen and (max-width:968px) {
+    
+    /*MAIN-HOME*/
+    .product {
+        flex-direction: column;
+    }
+    
+    .product-img {
+      order: -1;
+      width: 100%;
+    }
+
+    .day-product {
+        width: 100%;
+    }
+    /*MAIN-HOME*/
+
+    /*MAIN-ABOUT-US*/    
+    section .product-about {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #priority {
+        margin-top: 5rem;
+    }
+    
+    section .product-about .about-img {
+        width: 50%;
+    }
+  
+    .about-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .description-about p {
+        padding: 0rem;
+        margin-top: 1.5rem;
+    }
+    /*MAIN-ABOUT-US*/ 
+
+     /*MAIN-TIPS*/ 
+    .order-list {
+        margin-top: 2.5rem;
+    }
+
+    .order_tips {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order_tips figure {
+        width: 80%;
+    }
+
+    .order_1-tips li {
+        text-align: center;
+        list-style-type: none;
+    }
+
+    form .clasificacion {
+        margin: auto;
+        justify-content: center;
+    }
+
+    .section-tips {
+        height: auto;
+        margin-top: 0rem;
+    }
+     /*MAIN-TIPS*/ 
+}
+/*FIN de responsividad para el MAIN-HOME-ABOUT_US-TIPS*/
+
+/*COMIENZO de responsividad para el HEADER-(home, About us, contact)*/
+/*COMIENZO de responsividad para el MAIN-HOME-ABOUT_US*/
+@media screen and (max-width:768px) {      
+    
+    /*HEADER*/
+   .menu-principal {
+    flex-direction: column;
+    align-items: center;
+   }
+
+    .logo {
+        order: -1;
+        width: 15%;
+        margin-top: .9rem;
+    }
+
+    .menu {
+        width: 100%;
+        margin-top: .9rem;
+    }
+
+    /*HEADER*/
+
+    /*MAIN-HOME*/
+    .day-product h2 {
+        font-size: 1rem;
+    }
+    /*MAIN-HOME*/
+
+    /*MAIN-ABOUT_US*/
+    section .product-about .about-img {
+        width: 80%;
+    }
+
+    .about-img h2 {
+        font-size: 1.2rem;
+    }
+    
+    .description-about p {
+        font-size: 1.2rem;
+    }
+    /*MAIN-ABOUT_US*/
+}
+/*FIN de responsividad para el HEADER-(home, About us, contact)*/
+/*FIN de responsividad para el MAIN-HOME-ABOUT_US*/
+
+/*COMIENZO de responsividad para el MAIN-CONTACT*/
+@media screen and (max-width:768px) {
+    
+    .ubication-img {
+        width: 100%;
+    }
+    
+    .ubication-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 0rem;
+    }
+    
+    .ubication-description p {
+      font-size: 0.8rem;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 0rem;
+        margin: 0rem;
+        border-bottom: 2px solid var(--color-terciario);
+    }
+
+    .dropdown h4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--color-terciario);
+        font-size: 0.8rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .ubication-menu p {
+        font-size: 0.8rem;
+    }
+
+    .section-tips {
+        width: 100%;
+    }
+
+    .order_tips figure {
+        width: 100%;
+    }
+}
+/*FIN de responsividad para el MAIN-CONTACT*/
+
+/*COMIENZO de responsividad para el HEADER-(home, About us, contact)*/
+@media screen and (max-width: 650px) {
+    .menu-principal {
+        padding: 0rem;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: .9rem;
+    }
+
+    .menu ul li:hover {
+        background: linear-gradient(to right, #FFA500, #FF4500);
+    }
+
+    .section-tips h2 {
+        font-size: .9rem;
+    }
+}
+/*FIN de responsividad para el HEADER-(home, About us, contact)*/
+
+/*COMIENZO de responsividad para el MAIN-INFORMATION(TABLE)*/
+@media screen and (max-width: 450px) {
+    table th, table td {
+        font-size: 0.6rem;
+    }
+}
+/*FIN de responsividad para el MAIN-INFORMATION(TABLE)*/
+
+
+
+

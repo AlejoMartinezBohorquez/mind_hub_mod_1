@@ -1,0 +1,99 @@
+* {
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .9rem;
+    padding: 1rem;
+}
+
+.list, .table {
+    margin-top: .9rem;
+    border: 2px solid #3eff3f;
+    padding: .9rem 3rem;
+    background-color: #4e4e4e;
+}
+
+.list h1 {
+    text-align: center;
+}
+
+.list ul {
+    margin-top: 1rem;
+}
+
+.list ul .titulo {
+    margin-top: .9rem;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid white;
+    padding: 15px;
+    text-align: left;
+}
+
+thead tr th {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+caption {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        padding: 0rem;
+    }
+    
+    .table {
+        width: 100%;
+        padding: 0rem;
+    }
+
+    table, th, td {
+        padding: .6rem;
+        font-size: .8rem;
+    }
+
+    thead tr th {
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    caption {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .container {
+        padding: 0rem;
+    }
+    
+    .list ul li ul {
+        font-size: .6rem;
+    }
+
+    .list h1 {
+        font-size: 1.5rem;
+    }
+
+    .list ul li h2 {
+        font-size: 1rem;
+    }
+}

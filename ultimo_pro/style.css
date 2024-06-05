@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #131313;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    display: flex;
+    align-self: center;
+}
+
+nav{
+    width: 35%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    height: 40%;
+    padding: 3px 8px;
+
+}
+
+nav a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #131313;
+    color: white;
+}
+
+#subscribe{
+    border-radius: 1rem;
+}
+
+#image1{
+    background-image: url(images/house1.jpg);
+}
+
+#image2{
+    background-image: url(images/house2.jpg);
+}
+
+#image3{
+    background-image: url(images/house3.jpg);
+}
+
+#image4{
+    background-image: url(images/house4.jpg);
+}
+
+#image5{
+    background-image: url(images/house5.jpg);   
+}
+
+main div{
+    width: 20%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main div:hover{
+    filter: grayscale(0%);
+}
+
+ul{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+}
+
+table{
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    width: 60%;
+    margin-bottom: 2rem;
+}
+
+thead{
+    background-color: black;
+    color: white;
+}
